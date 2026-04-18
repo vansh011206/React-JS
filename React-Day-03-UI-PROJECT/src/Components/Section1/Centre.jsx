@@ -39,7 +39,6 @@ const Centre = () => {
                     description="New users exploring digital services who need guidance and onboarding support"
                     status="New User"
                 />
-
             </div>
         </div>
     )
