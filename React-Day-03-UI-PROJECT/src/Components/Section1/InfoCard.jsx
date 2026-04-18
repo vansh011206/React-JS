@@ -11,7 +11,7 @@ const InfoCard = ({ image, description, status, number }) => {
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex flex-col justify-end p-4">
+      <div className="absolute inset-0 from-black/80 via-black/40 to-transparent flex flex-col justify-end p-4">
         
         {/* Text */}
         <p className="text-sm leading-relaxed mb-4">
