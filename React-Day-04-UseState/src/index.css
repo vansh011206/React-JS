@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Bubblegum+Sans&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
+.parent{
+    background: #000;
+    color: aliceblue;
+    width:100vw;
+    height: 100vh;
+    /* height:100vh; */
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    margin: 0;padding: 0;
+}
+*{
+     font-family: "Montserrat", sans-serif;
+}
+body{
+    margin: 0;padding: 0;
+   
+}
+
+.written{
+    font-size: 8rem;
+    margin: 1rem;
+}
+
+.heading{
+    font-size: 3rem;
+    margin: 1rem;
+}
+
+.controls{
+    display: flex;
+    gap: 30px;
+}
+button{
+    width: 140px;
+    border: 2px solid black;
+    background-color: aliceblue;
+    color: black;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 30px;
+    font-weight: 700;
+    
+}
+button:hover{
+    background-color: black;
+    color: aliceblue;
+    border: 2px solid white;
+    cursor: pointer;
+} 
