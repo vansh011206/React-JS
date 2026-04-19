@@ -26,10 +26,16 @@
 // export default App;
 
 
-import React, { use } from 'react'
+import React, { useState } from 'react'
 
 const App = () => {
   const [num, setNum] = useState({user: "Vanshaj", age: 19, city: "Raipur"})
+
+  const clicked = () => {
+    const newNum = {...num};
+    newNum.user = "Sunil Baghel";
+    setNum(newNum);
+  }
 
   
   return (
@@ -37,7 +43,7 @@ const App = () => {
       <h1>{num.user}</h1>
       <p>Age: {num.age}</p>
       <p>City: {num.city}</p>
-      <button></button>
+      <button onClick={clicked}>Click Me</button>
     </div>
   )
 }
