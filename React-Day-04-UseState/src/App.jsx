@@ -34,9 +34,10 @@ const App = () => {
   const clicked = () => {
     const newNum = {...num};
     newNum.user = "Sunil Baghel";
+    newNum.age = 20;
+    newNum.city = "Durg";
     setNum(newNum);
   }
-
   
   return (
     <div>
@@ -48,5 +49,5 @@ const App = () => {
   )
 }
 
-export default App
+export default App;
 
