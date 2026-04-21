@@ -26,28 +26,79 @@
 // export default App;
 
 
-import React, { useState } from 'react'
+// Object
+
+// import React, { useState } from 'react'
+
+// const App = () => {
+//   const [num, setNum] = useState({user: "Vanshaj", age: 19, city: "Raipur"})
+
+//   const clicked = () => {
+//     const newNum = {...num};
+//     newNum.user = "Sunil Baghel";
+//     newNum.age = 20;
+//     newNum.city = "Durg";
+//     setNum(newNum);
+//   }
+  
+//   return (
+//     <div>
+//       <h1>{num.user}</h1>
+//       <p>Age: {num.age}</p>
+//       <p>City: {num.city}</p>
+//       <button onClick={clicked}>Click Me</button>
+//     </div>
+//   )
+// }
+// export default App;
+
+
+
+// // Array
+
+// import React,{ useState } from 'react'
+
+// const App = () => {
+//    const [num, setNum] = useState([10,20,30])
+//    const clicked = () => { 
+//     const newNum = [...num];
+//     newNum[0] = 100;
+//     newNum[1] = 200;
+//     newNum[2] = 300;
+//     setNum(newNum); 
+//    }
+
+//   return (
+//     <div>
+//       <h1>the value of array is {num}</h1>
+//       <button onClick={clicked}>Click Me</button>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+// batch method
+
+
+
+import React,{ useState } from 'react'
 
 const App = () => {
-  const [num, setNum] = useState({user: "Vanshaj", age: 19, city: "Raipur"})
+   const [num, setNum] = useState(60)
+   const clicked = () => { 
+      setNum(prev=>(prev+1)); 
+      setNum(prev=>(prev+1)); 
+      setNum(prev=>(prev+1)); 
+   }
 
-  const clicked = () => {
-    const newNum = {...num};
-    newNum.user = "Sunil Baghel";
-    newNum.age = 20;
-    newNum.city = "Durg";
-    setNum(newNum);
-  }
-  
   return (
     <div>
-      <h1>{num.user}</h1>
-      <p>Age: {num.age}</p>
-      <p>City: {num.city}</p>
+      <h1>the value of num is {num}</h1>
       <button onClick={clicked}>Click Me</button>
     </div>
   )
 }
 
 export default App;
-
