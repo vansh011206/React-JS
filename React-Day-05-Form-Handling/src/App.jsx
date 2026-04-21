@@ -1,11 +1,22 @@
-import React from 'react'
+// Two-way-binding
+
+import React, { useState } from 'react';
 
 const App = () => {
+  const [title, setTitle] = useState('');
 
-  const submithandler = (e) =>{
+  // const submithandler = (e) =>{
+  //   e.preventDefault();
+  //   console.log("Form Submitted");
+  // }
+
+  function submithandler(e){  
     e.preventDefault();
-    console.log("Form Submitted");
+    console.log("Form Submittedb by" , title);
+    setTitle("")
   }
+
+
   return (
    <div className="min-h-screen flex items-center justify-center bg-gray-900">
   
@@ -18,21 +29,19 @@ const App = () => {
       
       <input
         type="text"
+        onChange={(e)=>setTitle(e.target.value)}
+        value={title}
         placeholder="Your Name"
         className="bg-gray-700 text-white placeholder-gray-400 border border-gray-600 p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
       />
 
       <input
         type="email"
+        onChange={()=>console.log("inputing...")}
         placeholder="Your Email"
-        className="bg-gray-700 text-white placeholder-gray-400 border border-gray-600 p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-      />
 
-      <textarea
-        placeholder="Your Message"
-        rows="3"
         className="bg-gray-700 text-white placeholder-gray-400 border border-gray-600 p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-      ></textarea>
+      /> 
 
       <button
         type="submit"
