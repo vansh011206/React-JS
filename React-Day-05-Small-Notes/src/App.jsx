@@ -10,7 +10,7 @@ const App = () => {
 
   function submithandler(e) {
     e.preventDefault();
-    if (!title || !content) return; // Khali note save na ho
+    if (!title || !content){ return }; // Khali note save na ho
 
     // 2. Naya note object banayein
     const newNote = {
