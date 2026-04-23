@@ -34,7 +34,7 @@ const App = () => {
       {/* Left Side: Form Container */}
       <div className="w-full md:w-1/3">
         <div className="p-6 bg-[#121212] rounded-lg border border-white/10 sticky top-10">
-          <h2 className="text-white mb-4 font-bold text-xl text-cyan-500">Create Note</h2>
+          <h2 className=" mb-4 font-bold text-xl text-cyan-500">Create Note</h2>
           <form className="flex flex-col space-y-4" onSubmit={submithandler}>
             <input
               type="text"
