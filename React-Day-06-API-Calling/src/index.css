@@ -1,0 +1,41 @@
+body {
+  margin: 0;padding: 0;
+  box-sizing: border-box;
+}
+
+img{
+  width: 100px;
+  height: 100px;
+
+}
+
+
+.btn {
+  margin: 40px;
+  padding: 15px 30px; /* thoda realistic button size */
+  background: linear-gradient(135deg, #000000, #1f1f1f);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+
+  /* Smooth animation */
+  transition: all 0.3s ease;
+
+  /* Shadow */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Hover effect */
+.btn:hover {
+  background: linear-gradient(135deg, #111, #333);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.5);
+}
+
+/* Click effect */
+.btn:active {
+  transform: scale(0.95);
+}
