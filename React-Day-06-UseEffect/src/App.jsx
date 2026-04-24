@@ -9,6 +9,15 @@ const App = () => {
  useEffect( function(){
   console.log("useEffect called")
  },[num])
+ useEffect(() => {
+  const timer = setInterval(() => {
+    console.log("Running...");
+  }, 1000);
+
+  return () => {
+    clearInterval(timer);
+  };
+}, []);
  
   return (
     <div>
