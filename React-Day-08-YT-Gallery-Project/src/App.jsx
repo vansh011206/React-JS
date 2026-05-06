@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { useState } from 'react'
-import axios from 'axios'
+// import axios from 'axios'
 
 
 const App = () => {
@@ -8,15 +8,15 @@ const App = () => {
   const [Userdata, setUserdata] = useState([])
   const [index, setIndex] = useState(2)
 
-  async function buttonclick() {
-    console.log('Button Clicked')
-    const res = await axios.get(`https://picsum.photos/v2/list?page=${index}&limit=10`);
-    console.log(res.data)
-    setUserdata(res.data)
-  }
-  useEffect(() => {
-    buttonclick();
-  }, [index])
+  // async function buttonclick() {
+  //   console.log('Button Clicked')
+  //   const res = await axios.get(`https://picsum.photos/v2/list?page=${index}&limit=10`);
+  //   console.log(res.data)
+  //   setUserdata(res.data)
+  // }
+  // useEffect(() => {
+  //   buttonclick();
+  // }, [index])
 
   let printdata = 'no user available'
   if (Userdata.length > 0) {
@@ -67,3 +67,5 @@ const App = () => {
 }
 
 export default App
+
+
